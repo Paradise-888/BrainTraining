@@ -1,0 +1,114 @@
+[gd_scene load_steps=4 format=3 uid="uid://dmv47m4uchiyq"]
+
+[ext_resource type="Script" uid="uid://bxtabr5p44oke" path="res://Scripts/memory_game.gd" id="1_t6jen"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_t6jen"]
+bg_color = Color(0.6, 0.91764706, 0.5803922, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_uecd5"]
+bg_color = Color(0.09411765, 0.7647059, 0.21960784, 1)
+
+[node name="MemoryGame" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_t6jen")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -33.0
+offset_right = 20.0
+offset_bottom = 33.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label_Title" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+
+[node name="Label_Score" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+
+[node name="GridContainer" type="GridContainer" parent="VBoxContainer"]
+layout_mode = 2
+columns = 4
+
+[node name="Button" type="Button" parent="VBoxContainer/GridContainer"]
+custom_minimum_size = Vector2(120, 150)
+layout_mode = 2
+theme_override_styles/pressed = SubResource("StyleBoxFlat_t6jen")
+theme_override_styles/focus = SubResource("StyleBoxFlat_uecd5")
+
+[node name="Button2" type="Button" parent="VBoxContainer/GridContainer"]
+custom_minimum_size = Vector2(120, 150)
+layout_mode = 2
+theme_override_styles/pressed = SubResource("StyleBoxFlat_t6jen")
+theme_override_styles/focus = SubResource("StyleBoxFlat_uecd5")
+
+[node name="Button3" type="Button" parent="VBoxContainer/GridContainer"]
+custom_minimum_size = Vector2(120, 150)
+layout_mode = 2
+theme_override_styles/pressed = SubResource("StyleBoxFlat_t6jen")
+theme_override_styles/focus = SubResource("StyleBoxFlat_uecd5")
+
+[node name="Button4" type="Button" parent="VBoxContainer/GridContainer"]
+custom_minimum_size = Vector2(120, 150)
+layout_mode = 2
+theme_override_styles/pressed = SubResource("StyleBoxFlat_t6jen")
+theme_override_styles/focus = SubResource("StyleBoxFlat_uecd5")
+
+[node name="Button5" type="Button" parent="VBoxContainer/GridContainer"]
+custom_minimum_size = Vector2(120, 150)
+layout_mode = 2
+theme_override_styles/pressed = SubResource("StyleBoxFlat_t6jen")
+theme_override_styles/focus = SubResource("StyleBoxFlat_uecd5")
+
+[node name="Button6" type="Button" parent="VBoxContainer/GridContainer"]
+custom_minimum_size = Vector2(120, 150)
+layout_mode = 2
+theme_override_styles/pressed = SubResource("StyleBoxFlat_t6jen")
+theme_override_styles/focus = SubResource("StyleBoxFlat_uecd5")
+
+[node name="Button7" type="Button" parent="VBoxContainer/GridContainer"]
+custom_minimum_size = Vector2(120, 150)
+layout_mode = 2
+theme_override_styles/pressed = SubResource("StyleBoxFlat_t6jen")
+theme_override_styles/focus = SubResource("StyleBoxFlat_uecd5")
+
+[node name="Button8" type="Button" parent="VBoxContainer/GridContainer"]
+custom_minimum_size = Vector2(120, 150)
+layout_mode = 2
+theme_override_styles/pressed = SubResource("StyleBoxFlat_t6jen")
+theme_override_styles/focus = SubResource("StyleBoxFlat_uecd5")
+
+[node name="Button_Back" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -31.0
+offset_right = 68.0
+grow_vertical = 0
+size_flags_horizontal = 4
+size_flags_vertical = 0
+focus_mode = 0
+theme_override_font_sizes/font_size = 26
+text = "ย้อนกลับ"
+
+[connection signal="pressed" from="Button_Back" to="." method="_on_button_back_pressed"]

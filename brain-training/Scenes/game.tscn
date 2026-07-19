@@ -1,0 +1,64 @@
+[gd_scene load_steps=2 format=3 uid="uid://dya0uic7srg0l"]
+
+[ext_resource type="Script" uid="uid://b1uel0fyydgww" path="res://Scripts/game.gd" id="1_ebmjs"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ebmjs")
+
+[node name="Background" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -54.0
+offset_top = -35.0
+offset_right = 47.5
+offset_bottom = 43.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 64
+alignment = 1
+
+[node name="StatusLabel" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 48
+text = "กด SPACEBAR "
+horizontal_alignment = 1
+
+[node name="BestTimeLabel" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 48
+text = "เวลาที่ดีที่สุด : -- ms"
+horizontal_alignment = 1
+
+[node name="DelayTimer" type="Timer" parent="."]
+one_shot = true
+
+[node name="Button_Back" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -8.0
+offset_right = 8.0
+grow_vertical = 0
+focus_mode = 0
+theme_override_font_sizes/font_size = 26
+text = "ย้อนกลับ"
+
+[connection signal="timeout" from="DelayTimer" to="." method="_on_delay_timer_timeout"]
+[connection signal="pressed" from="Button_Back" to="." method="_on_button_back_pressed"]

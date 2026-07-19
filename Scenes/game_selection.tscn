@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://cp8jpoaulwt06"]
+[gd_scene load_steps=3 format=3 uid="uid://cp8jpoaulwt06"]
 
 [ext_resource type="Script" uid="uid://cqgr2taerisde" path="res://Scripts/game_selection.gd" id="1_yvivq"]
+[ext_resource type="FontFile" uid="uid://k40ik1s476s7" path="res://Fonts/TH Chakra Petch Bold.ttf" id="2_5kv3t"]
 
 [node name="GameSelection" type="Control"]
 layout_mode = 3
@@ -38,6 +39,7 @@ alignment = 1
 
 [node name="หัวข้อ" type="Label" parent="VBoxContainer"]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("2_5kv3t")
 theme_override_font_sizes/font_size = 48
 text = "เลือกเกมฝึกสมอง"
 horizontal_alignment = 1
@@ -48,11 +50,13 @@ layout_mode = 2
 
 [node name="Button_Reaction" type="Button" parent="VBoxContainer"]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("2_5kv3t")
 theme_override_font_sizes/font_size = 20
 text = "เกมทดสอบความไว"
 
 [node name="Button_Memory" type="Button" parent="VBoxContainer"]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("2_5kv3t")
 theme_override_font_sizes/font_size = 20
 text = "เกมจับคู่สี"
 
@@ -60,6 +64,7 @@ text = "เกมจับคู่สี"
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
+theme_override_fonts/font = ExtResource("2_5kv3t")
 theme_override_font_sizes/font_size = 16
 text = "ย้อนกลับ"
 

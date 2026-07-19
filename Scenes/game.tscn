@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://dya0uic7srg0l"]
+[gd_scene load_steps=3 format=3 uid="uid://dya0uic7srg0l"]
 
 [ext_resource type="Script" uid="uid://b1uel0fyydgww" path="res://Scripts/game.gd" id="1_ebmjs"]
+[ext_resource type="FontFile" uid="uid://k40ik1s476s7" path="res://Fonts/TH Chakra Petch Bold.ttf" id="2_qxrlw"]
 
 [node name="Control" type="Control"]
 layout_mode = 3
@@ -35,12 +36,14 @@ alignment = 1
 
 [node name="StatusLabel" type="Label" parent="VBoxContainer"]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("2_qxrlw")
 theme_override_font_sizes/font_size = 48
 text = "กด SPACEBAR "
 horizontal_alignment = 1
 
 [node name="BestTimeLabel" type="Label" parent="VBoxContainer"]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("2_qxrlw")
 theme_override_font_sizes/font_size = 48
 text = "เวลาที่ดีที่สุด : -- ms"
 horizontal_alignment = 1
@@ -57,6 +60,7 @@ offset_top = -8.0
 offset_right = 8.0
 grow_vertical = 0
 focus_mode = 0
+theme_override_fonts/font = ExtResource("2_qxrlw")
 theme_override_font_sizes/font_size = 26
 text = "ย้อนกลับ"
 

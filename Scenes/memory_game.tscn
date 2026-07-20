@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://dmv47m4uchiyq"]
 
 [ext_resource type="Script" uid="uid://bxtabr5p44oke" path="res://Scripts/memory_game.gd" id="1_t6jen"]
-[ext_resource type="FontFile" uid="uid://k40ik1s476s7" path="res://Fonts/TH Chakra Petch Bold.ttf" id="2_uecd5"]
+[ext_resource type="FontFile" uid="uid://mo0trho068wk" path="res://Fonts/NotoSansThai-VariableFont_wdth,wght.ttf" id="2_uecd5"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_t6jen"]
 bg_color = Color(0.6, 0.91764706, 0.5803922, 1)
@@ -55,48 +55,56 @@ columns = 4
 [node name="Button" type="Button" parent="VBoxContainer/GridContainer"]
 custom_minimum_size = Vector2(120, 150)
 layout_mode = 2
+theme_override_fonts/font = ExtResource("2_uecd5")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_t6jen")
 theme_override_styles/focus = SubResource("StyleBoxFlat_uecd5")
 
 [node name="Button2" type="Button" parent="VBoxContainer/GridContainer"]
 custom_minimum_size = Vector2(120, 150)
 layout_mode = 2
+theme_override_fonts/font = ExtResource("2_uecd5")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_t6jen")
 theme_override_styles/focus = SubResource("StyleBoxFlat_uecd5")
 
 [node name="Button3" type="Button" parent="VBoxContainer/GridContainer"]
 custom_minimum_size = Vector2(120, 150)
 layout_mode = 2
+theme_override_fonts/font = ExtResource("2_uecd5")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_t6jen")
 theme_override_styles/focus = SubResource("StyleBoxFlat_uecd5")
 
 [node name="Button4" type="Button" parent="VBoxContainer/GridContainer"]
 custom_minimum_size = Vector2(120, 150)
 layout_mode = 2
+theme_override_fonts/font = ExtResource("2_uecd5")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_t6jen")
 theme_override_styles/focus = SubResource("StyleBoxFlat_uecd5")
 
 [node name="Button5" type="Button" parent="VBoxContainer/GridContainer"]
 custom_minimum_size = Vector2(120, 150)
 layout_mode = 2
+theme_override_fonts/font = ExtResource("2_uecd5")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_t6jen")
 theme_override_styles/focus = SubResource("StyleBoxFlat_uecd5")
 
 [node name="Button6" type="Button" parent="VBoxContainer/GridContainer"]
 custom_minimum_size = Vector2(120, 150)
 layout_mode = 2
+theme_override_fonts/font = ExtResource("2_uecd5")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_t6jen")
 theme_override_styles/focus = SubResource("StyleBoxFlat_uecd5")
 
 [node name="Button7" type="Button" parent="VBoxContainer/GridContainer"]
 custom_minimum_size = Vector2(120, 150)
 layout_mode = 2
+theme_override_fonts/font = ExtResource("2_uecd5")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_t6jen")
 theme_override_styles/focus = SubResource("StyleBoxFlat_uecd5")
 
 [node name="Button8" type="Button" parent="VBoxContainer/GridContainer"]
 custom_minimum_size = Vector2(120, 150)
 layout_mode = 2
+theme_override_fonts/font = ExtResource("2_uecd5")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_t6jen")
 theme_override_styles/focus = SubResource("StyleBoxFlat_uecd5")
 

@@ -2,13 +2,13 @@
 
 importer="font_data_dynamic"
 type="FontFile"
-uid="uid://btsvscjex7p1v"
-path="res://.godot/imported/TH Chakra Petch Bold Italic.ttf-4dd7551cd11c18dd9af5d339c877f2a6.fontdata"
+uid="uid://mo0trho068wk"
+path="res://.godot/imported/NotoSansThai-VariableFont_wdth,wght.ttf-10b4c61066cf9819d431e775a54e806a.fontdata"
 
 [deps]
 
-source_file="res://Fonts/TH Chakra Petch Bold Italic.ttf"
-dest_files=["res://.godot/imported/TH Chakra Petch Bold Italic.ttf-4dd7551cd11c18dd9af5d339c877f2a6.fontdata"]
+source_file="res://Fonts/NotoSansThai-VariableFont_wdth,wght.ttf"
+dest_files=["res://.godot/imported/NotoSansThai-VariableFont_wdth,wght.ttf-10b4c61066cf9819d431e775a54e806a.fontdata"]
 
 [params]
 

@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://dmv47m4uchiyq"]
 
 [ext_resource type="Script" uid="uid://bxtabr5p44oke" path="res://Scripts/memory_game.gd" id="1_t6jen"]
-[ext_resource type="FontFile" uid="uid://mo0trho068wk" path="res://Fonts/NotoSansThai-VariableFont_wdth,wght.ttf" id="2_uecd5"]
+[ext_resource type="FontFile" uid="uid://br24fc8njkry0" path="res://Fonts/NotoSansThai-Regular.ttf" id="2_uecd5"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_t6jen"]
 bg_color = Color(0.6, 0.91764706, 0.5803922, 1)

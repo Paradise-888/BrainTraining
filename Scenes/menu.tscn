@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://bpuyvf7tvndpw"]
 
 [ext_resource type="Script" uid="uid://djmly60q7rycp" path="res://Scripts/menu.gd" id="1_1rerr"]
-[ext_resource type="FontFile" uid="uid://k40ik1s476s7" path="res://Fonts/TH Chakra Petch Bold.ttf" id="2_xhh6f"]
+[ext_resource type="FontFile" uid="uid://br24fc8njkry0" path="res://Fonts/NotoSansThai-Regular.ttf" id="2_xhh6f"]
 
 [node name="Control" type="Control"]
 layout_mode = 3

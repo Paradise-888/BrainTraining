@@ -1,7 +1,6 @@
-[gd_scene load_steps=3 format=3 uid="uid://bpuyvf7tvndpw"]
+[gd_scene load_steps=2 format=3 uid="uid://bpuyvf7tvndpw"]
 
 [ext_resource type="Script" uid="uid://djmly60q7rycp" path="res://Scripts/menu.gd" id="1_1rerr"]
-[ext_resource type="FontFile" uid="uid://br24fc8njkry0" path="res://Fonts/NotoSansThai-Regular.ttf" id="2_xhh6f"]
 
 [node name="Control" type="Control"]
 layout_mode = 3
@@ -43,14 +42,12 @@ alignment = 1
 [node name="Label" type="Label" parent="VBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 4
-theme_override_fonts/font = ExtResource("2_xhh6f")
 theme_override_font_sizes/font_size = 64
 text = "Brain Training Game"
 horizontal_alignment = 1
 
 [node name="Button" type="Button" parent="VBoxContainer"]
 layout_mode = 2
-theme_override_fonts/font = ExtResource("2_xhh6f")
 text = "start"
 
 [connection signal="pressed" from="VBoxContainer/Button" to="." method="_on_start_button_pressed"]

@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://dya0uic7srg0l"]
 
 [ext_resource type="Script" uid="uid://b1uel0fyydgww" path="res://Scripts/game.gd" id="1_ebmjs"]
-[ext_resource type="FontFile" uid="uid://mo0trho068wk" path="res://Fonts/NotoSansThai-VariableFont_wdth,wght.ttf" id="2_qxrlw"]
+[ext_resource type="FontFile" uid="uid://br24fc8njkry0" path="res://Fonts/NotoSansThai-Regular.ttf" id="2_qxrlw"]
 
 [node name="Control" type="Control"]
 layout_mode = 3
@@ -38,14 +38,14 @@ alignment = 1
 layout_mode = 2
 theme_override_fonts/font = ExtResource("2_qxrlw")
 theme_override_font_sizes/font_size = 48
-text = "กด SPACEBAR "
+text = "Press the Spacebar"
 horizontal_alignment = 1
 
 [node name="BestTimeLabel" type="Label" parent="VBoxContainer"]
 layout_mode = 2
 theme_override_fonts/font = ExtResource("2_qxrlw")
 theme_override_font_sizes/font_size = 48
-text = "เวลาที่ดีที่สุด : -- ms"
+text = "Best Time: -- ms"
 horizontal_alignment = 1
 
 [node name="DelayTimer" type="Timer" parent="."]
@@ -62,7 +62,7 @@ grow_vertical = 0
 focus_mode = 0
 theme_override_fonts/font = ExtResource("2_qxrlw")
 theme_override_font_sizes/font_size = 26
-text = "ย้อนกลับ"
+text = "Back"
 
 [connection signal="timeout" from="DelayTimer" to="." method="_on_delay_timer_timeout"]
 [connection signal="pressed" from="Button_Back" to="." method="_on_button_back_pressed"]

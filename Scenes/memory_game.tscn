@@ -121,6 +121,6 @@ size_flags_vertical = 0
 focus_mode = 0
 theme_override_fonts/font = ExtResource("2_uecd5")
 theme_override_font_sizes/font_size = 26
-text = "ย้อนกลับ"
+text = "Back"
 
 [connection signal="pressed" from="Button_Back" to="." method="_on_button_back_pressed"]
